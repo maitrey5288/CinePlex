@@ -1,7 +1,7 @@
 const express = require("express")
 const router = express.Router()
 const { auth, isAdmin,isUser } = require("../middleware/auth")
-const {getMovies,addMovie,getShows,getMovieData,addMovieToTheatre,deleteShow} = require('../controllers/movie')
+const {getMovies,addMovie,getShows,getMovieData,addMovieToTheatre,deleteShow} = require('../controllers/Movie')
 const {addShow,addTheatre,getTheatres,getLocations,addLocation,getSeats} = require('../controllers/Show')
 const {login,signup,changePassword,verifyAccount,getUserData} = require('../controllers/Auth')
 const {capturePayment,verifyPayment,getBooking} = require('../controllers/payments')
