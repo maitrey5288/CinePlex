@@ -1,0 +1,29 @@
+{
+  "name": "movie-booking-server",
+  "version": "1.0.0",
+  "description": "backend for movie booking",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "npm start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.41.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.1.0",
+    "nodemailer": "^6.9.8",
+    "nodemon": "^3.0.3",
+    "otp-generator": "^4.0.1",
+    "razorpay": "^2.9.2",
+    "stripe": "^14.14.0"
+  }
+}

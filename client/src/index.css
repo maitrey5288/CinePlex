@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url(https://www.w3schools.com/w3css/4/w3.css);
+
+.customShadow{
+
+    box-shadow: -1px 1rem 1rem 2px #10111a66;
+   
+    
+}
+body{
+  width: 100vw;
+  
+    padding: 0px;
+    margin: 0px;
+   
+}
+.loginbg{
+  background-image: linear-gradient(to right bottom, #100018, #12001c, #140021, #140026, #14002b, #10032d, #0a052f, #040831, #000d2f, #00112b, #001327, #021523);
+}
+.no-scrollbar:not(:hover)::-webkit-scrollbar {
+    display: none;
+ 
+}
+
+.home-scrollbar:not(:hover)::-webkit-scrollbar {
+  display: none;
+ }  
+
+
+
+.bg3{
+    background: linear-gradient(to right, #434343 0%, black 100%);
+}
+ 
+.card{
+  /* border:  0.1px solid rgb(48, 110, 232); */
+  box-shadow:  rgba(0, 0, 0, 0.726) 0px 4px 24px;
+  background-color: rgb(19, 17, 28);
+}
+
+.button-bg{
+  background :  linear-gradient(76.35deg, rgb(128, 26, 230) 15.89%, rgb(162, 26, 230) 89.75%);
+}
+
+.hero-bg{
+  background-image: linear-gradient(to left bottom, #4c076f, #3e0a64, #310b59, #250b4e, #1a0942, #1a0841, #190841, #190740, #22084a, #2d0754, #38045e, #440067);}
+  .addbg{
+    background :  linear-gradient(212deg, #df0b0b00 0%, #1b0929 67%, #260641 95%);
+}
+
+.carousal-bg{
+  background : linear-gradient(181deg, #00000000 0%, #34035c28 67%, #26064139 75%);
+ 
+}
+
+.imgborder{
+    background-color: aqua;
+  border-radius:   30% 70% 70% 30% / 30% 30% 70% 70% ;
+  
+}
+ 
+.bgre{
+  background-color: #000000;
+}
+
+.herobottom{
+  @media (min-width: 768px) { 
+
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 95%, 0 100%);
+  }
+}

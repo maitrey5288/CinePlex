@@ -1,0 +1,18 @@
+movie :- add, delete;
+
+theature :- add, delete;
+
+user :- 
+    login and signups;
+
+    payment;
+
+    qrcode feature ;
+
+    select location:-
+        search a movie and select:- https://www.youtube.com/watch?v=p4qpZ7niueg
+        show theature and times with 2d and 3d
+
+    seat view;
+
+admin:-
