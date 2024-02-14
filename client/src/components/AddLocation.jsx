@@ -36,7 +36,7 @@ async function submitHandler(){
       } catch (e) {
         setProgress(100)
         setLoading(false);
-        console.log(e);
+      
         toast.error(e.response?.data?.message);
       }
 }

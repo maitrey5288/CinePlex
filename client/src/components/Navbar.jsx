@@ -14,8 +14,7 @@ const Navbar = ({logoutHandler}) => {
   const [dropDOpen,setDropDOpen] = useState(false);
   const {user} = useContext(UserContext);
   const location = useLocation();
-  console.log("maitrey",user);
-  console.log(location.pathname,"locaiton")
+ 
   const [selected,setselected] = useState(false);
   const navigate = useNavigate();
    return (

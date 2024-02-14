@@ -23,7 +23,7 @@ export const Ticket = ({ticket}) => {
     setIsOpen(false);
     setFlipped(false);
   }
-console.log("ticket",ticket)
+ 
  
   
   return (

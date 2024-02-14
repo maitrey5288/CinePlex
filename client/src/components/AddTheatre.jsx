@@ -24,9 +24,9 @@ async function submitHandler(){
         
         setTheatres(oldArray => [...oldArray, res.data.data]);
         setProgress(70)
-        console.log(res.data.locationDetails,"jioh")
+       
         await getLocations();
-        console.log("Locations, ",locations);
+       
         setProgress(80)
       }
       

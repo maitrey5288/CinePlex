@@ -12,7 +12,7 @@ import toast from 'react-hot-toast';
 const UserRoute = ({children,userloading}) => {
 
     const {user} = useContext(UserContext);
-    console.log(user)
+    
     
     if (!userloading && user && user.accountType == 'User' )
      return <Outlet /> 

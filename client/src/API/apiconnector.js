@@ -17,11 +17,11 @@ export const apiConnector = (method, url, bodyData, headers, params) => {
    
     let finaldata = bodyData ? bodyData : {};
     if(token){
-      console.log("dasc")
+    
       finaldata['token'] = token;
  
     }
-console.log("bodydata",finaldata)
+ 
     return axiosInstance({
         method:`${method}`,
         url:`${url}`,

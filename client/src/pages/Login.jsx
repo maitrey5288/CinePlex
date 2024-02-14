@@ -35,7 +35,7 @@ const Login = () => {
         const res = await apiConnector("POST",LOGIN_API , {
           formData         
         });
-        console.log(res.data.user)
+       
         localStorage.setItem("token", JSON.stringify(res.data.token))
         localStorage.setItem("user", JSON.stringify(res.data.user))
         setUser(res.data.user);

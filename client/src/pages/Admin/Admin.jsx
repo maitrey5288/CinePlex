@@ -25,7 +25,7 @@ const Admin = () => {
       setLoading(true)
       const res = await apiConnector("POST" ,GETMOVIES_API,{location:selectedlocation,theatre:selectedtheatre} );
       setMoviedata(res.data.data); 
-      console.log("movies",res.data)
+     
       setLoading(false)
     }
  
@@ -45,7 +45,7 @@ const Admin = () => {
     async function getLocations(){
         setLoading(true)
         const res = await apiConnector("POST", GETLOCATIONS_API ,{});
-console.log(res.data.data , "FSgrefbd")
+ 
         setLocations(res.data.data);
         
         
@@ -106,7 +106,7 @@ console.log(res.data.data , "FSgrefbd")
           <option value="">
            All
           </option>
-          {console.log(locations,"Lofas")}
+    
           { 
             locations?.map((location, index) => {
             

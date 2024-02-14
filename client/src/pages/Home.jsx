@@ -21,11 +21,11 @@ const Home = () => {
       if(user.accountType == 'Admin') 
       toast.error("admin can't book")
       navigate("/movies")
-  console.log("user");
+  
 }
 else{
   navigate("/login")
-  console.log("login");
+  
     }
     }
 

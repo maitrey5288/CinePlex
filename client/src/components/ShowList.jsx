@@ -58,7 +58,7 @@ const ShowList = ({twoDshows,  selectedtheatre, setTheatre , settwoDShows ,setTh
             movieId: movieId,
           });
           setMovie(res.data.data);
-          console.log(res.data.data,"moviedata");
+         
           setLoading(false);
         } catch (e) {
           toast.error(e.message);

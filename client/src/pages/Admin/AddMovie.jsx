@@ -76,7 +76,7 @@ const AddMovie = () => {
     const handleImageChange = (event) => {
       
       setImage(event.target.files[0])
-      console.log("image",image)
+      
  
 
     };

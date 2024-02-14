@@ -35,7 +35,7 @@ const UserMovieDetails = () => {
       setProgress(50)
       setMovie(res.data.data);
       setProgress(70)
-      console.log(res.data.data,"moviedata");
+ 
       setLoading(false);
       setProgress(100)
     } catch (e) {

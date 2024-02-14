@@ -28,7 +28,7 @@ const [filtered,setFiltered] = useState(moviedata?.filter(movie => movie.name.to
       setProgress(30)
       setMoviedata(res.data.data); 
       setProgress(50)
-      console.log("movies",res.data)
+    
       setProgress(70)
       setLoading(false)
       setProgress(100)
@@ -50,7 +50,7 @@ const [filtered,setFiltered] = useState(moviedata?.filter(movie => movie.name.to
     async function getLocations(){
         setLoading(true)
         const res = await apiConnector("POST", GETLOCATIONS_API ,{});
-console.log(res.data.data , "FSgrefbd")
+ 
         setLocations(res.data.data);
         
         
@@ -62,7 +62,7 @@ console.log(res.data.data , "FSgrefbd")
    
     setQuery(e.target.value) ;
   
-console.log(filtered)
+ 
 
   }
 useEffect(() => {
@@ -120,7 +120,7 @@ useEffect(() => {
           <option value="">
            All
           </option>
-          {console.log(locations,"Lofas")}
+    
           { 
             locations?.map((location, index) => {
             

@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 const Card = ({movie}) => {
   
-  console.log("movie", movie)
+  
   const navigate = useNavigate()
   const [isHovering, setIsHovering] = useState(false);
 

@@ -4,7 +4,7 @@ import Seat from './Seat'
 export default function Seats   ({rows,leftcols ,rightcols ,setSelectedSeats,seats,setAmount,amount,cost})  {
 const curdate = new Date();
 const fifteen = 16 * 60 * 1000;
-console.log(seats['A1']?.status && Math.abs( curdate.getTime() - new Date( seats['A1']?.date).getTime())> fifteen , "diff")
+ 
   return (
     <>
      <div className='w-[4%] bg-textcolor text-white rounded-md text-xs flex flex-col gap-1 px-1 py-[2px] justify-center items-center'>

@@ -40,7 +40,7 @@ const Shows = () => {
             setProgress(50)
             setShows(res.data.data);
             setProgress(70)
-            console.log(res.data.data,"shows");
+            
             
             setLoading(false);
             setProgress(100)
@@ -55,7 +55,7 @@ const Shows = () => {
               setProgress(50)
               setShows(res.data.data);
               setProgress(70)
-              console.log(res.data.data,"shows");
+              
               setProgress(100)
               setLoading(false);
             }
@@ -84,7 +84,7 @@ const Shows = () => {
         setProgress(50)
         setShows(res.data.data);
         setProgress(70)
-        console.log(res.data.data,"shows");
+      
         setLoading(false);
         setProgress(100)
       } catch (e) {

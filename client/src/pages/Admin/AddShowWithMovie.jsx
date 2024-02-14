@@ -97,7 +97,7 @@ function changeHr(e){
     async function submitHandler(){
         try {
             setLoading(true);
-            console.log("date",date);
+        
       const res = await apiConnector("POST", ADDSHOWDATA_API, {
         theatreId: selectedtheatre,movieId : selectedMovie,time:(durationhr+':'+durationmin),date,type:showType
       });

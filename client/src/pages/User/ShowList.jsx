@@ -29,7 +29,7 @@ const ShowList = ({twoDshows,  selectedtheatre, setTheatre , settwoDShows ,setTh
           showsData[show.date] = [show];
         }
       });
-      console.log(showsData,"Asdasd")
+ 
       settwoDShows(showsData);
  
       const res1 = await apiConnector("POST", GETSHOWDATA_API, {
@@ -59,7 +59,7 @@ const ShowList = ({twoDshows,  selectedtheatre, setTheatre , settwoDShows ,setTh
             movieId: movieId,
           });
           setMovie(res.data.data);
-          console.log(res.data.data,"moviedata");
+ 
           setLoading(false);
         } catch (e) {
           toast.error(e.message);

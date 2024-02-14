@@ -90,7 +90,7 @@ function logoutHandler(){
  }, [])
  
  
-   console.log(token,user, localStorage.getItem("user"),JSON.parse(localStorage.getItem("user")) )
+    
  
    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 480px)' })
 

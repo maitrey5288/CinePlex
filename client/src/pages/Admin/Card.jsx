@@ -3,7 +3,7 @@ import movieimg from '../../assets/movie.png'
 import { useNavigate } from 'react-router-dom'
 const Card = ({movie}) => {
   
-  console.log("movie", movie)
+   
   const navigate = useNavigate()
   const [isHovering, setIsHovering] = useState(false);
 

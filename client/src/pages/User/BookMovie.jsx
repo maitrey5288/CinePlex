@@ -39,7 +39,7 @@ export default function BookMovie(){
           setProgress(60);
           setShowData(res.data.showDetails)
           setProgress(70);
-          console.log(res.data.data)
+         
           setLoading(false);
           
           setProgress(100);
@@ -55,12 +55,12 @@ export default function BookMovie(){
 
       }, [])
       useEffect(() => {
-        console.log(seats)
+       
       
 
       }, [seats])
       useEffect(() => {
-        console.log(selectedSeats)
+       
       
 
       }, [selectedSeats])

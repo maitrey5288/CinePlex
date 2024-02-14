@@ -14,14 +14,14 @@ const Bookings = () => {
     try {
       setProgress(10)
       setLoading(true);
-      console.log("heree");
+    
       const res = await apiConnector("POST", GET_BOOKING);
       setProgress(50)
-      console.log("heree");
+     
       
       setBookings(res.data.data);
       setProgress(70)
-      console.log(res.data.data);
+      
       setProgress(80)
       
       setLoading(false);

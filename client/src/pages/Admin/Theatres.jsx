@@ -47,7 +47,7 @@ const Theatres = () => {
      try{ setProgress(10)
         setLoading(true)
         const res = await apiConnector("POST", GETLOCATIONS_API ,{});
-        console.log(res.data.data , "FSgrefbd")
+       
         setProgress(50)
         setLocations(res.data.data) 
 
@@ -76,7 +76,7 @@ const Theatres = () => {
             setTheatres( l.theatres);
         else
         setTheatres([])
-            console.log("theatrses",theatres)
+            
         }
     });
     setProgress(100)
@@ -107,7 +107,7 @@ const Theatres = () => {
           <option value="" disabled>
             Choose a location
           </option>
-          {console.log(locations,"Lofas")}
+         
           { 
             locations?.map((location, index) => {
             

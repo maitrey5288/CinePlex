@@ -44,7 +44,7 @@ const AdminMovies = ({ theatre }) => {
       setProgress(30);
       setMoviedata(res.data.data);
       setProgress(50);
-      console.log("movies", res.data);
+     
       setProgress(70);
       setLoading(false);
       setProgress(100);
@@ -62,7 +62,7 @@ const AdminMovies = ({ theatre }) => {
     setProgress(30);
     setMoviedata(res.data.data);
     setProgress(50);
-    console.log("movies", res.data);
+      
     setProgress(70);
     setLoading(false);
     setProgress(100);
@@ -78,7 +78,7 @@ const AdminMovies = ({ theatre }) => {
   async function getLocations() {
     setLoading(true);
     const res = await apiConnector("POST", GETLOCATIONS_API, {});
-    console.log(res.data.data, "FSgrefbd");
+ 
     setLocations(res.data.data);
 
     setLoading(false);
@@ -87,7 +87,7 @@ const AdminMovies = ({ theatre }) => {
   function queryChanger(e) {
     setQuery(e.target.value);
 
-    console.log(filtered);
+ 
   }
   useEffect(() => {
     setFiltered(
@@ -181,7 +181,7 @@ const AdminMovies = ({ theatre }) => {
                   value={selectedlocation}
                 >
                   <option value="">All</option>
-                  {console.log(locations, "Lofas")}
+                  
                   {locations?.map((location, index) => {
                     return (
                       <option value={location._id} key={index}>

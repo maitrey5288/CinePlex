@@ -19,7 +19,7 @@ const {setProgress} = useContext(ProgressContext);
     setProgress(50);
     setMoviedata(res.data.data); 
     setProgress(70);
-    console.log("movies",res.data)
+ 
     setLoading(false)
     setProgress(100);
   }
