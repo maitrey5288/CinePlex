@@ -18,7 +18,7 @@ database.connect();
 app.use(express.json());
 app.use(
 	cors({
-		origin:"*",
+		origin:process.env.FRONTEND,
 		credentials:true,
 	})
 )
