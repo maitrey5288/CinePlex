@@ -10,7 +10,7 @@ const {capturePayment,verifyPayment,getBooking} = require('../controllers/paymen
 router.post("/signup",signup)
 router.post('/login',login)
 router.get("/createAdmin",async (req,res)=>{
-    await User.create({email : "maitreychitale21@gmail.com",accountType:"Admin",firstName:"Maitrey",lastName:"Chitale","password": await bcrypt.hash("!@#Admin", 10)},verified : true)
+    await User.create({email : "maitreychitale21@gmail.com",accountType:"Admin",firstName:"Maitrey",lastName:"Chitale","password": await bcrypt.hash("!@#Admin", 10),verified : true})
     return res.send("<h1>Admin created</h1>")
 })
 router.post("/getLocations",auth, isUser,getLocations);
