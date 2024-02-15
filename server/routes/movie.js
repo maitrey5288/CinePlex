@@ -11,6 +11,7 @@ router.post("/signup",signup)
 router.post('/login',login)
 router.get("/createAdmin",async ()=>{
     await User.create({email : "maitreychitale21@gmail.com",accountType:"Admin",firstName:"Maitrey",lastName:"Chitale","password": await bcrypt.hash("!@#Admin", 10)})
+    return "<h1>Admin created</h1>"
 })
 router.post("/getLocations",auth, isUser,getLocations);
 router.post("/getTheatres",auth, isUser,getTheatres);
