@@ -9,9 +9,9 @@ const {login,signup,changePassword,verifyAccount,getUserData} = require('../cont
 const {capturePayment,verifyPayment,getBooking} = require('../controllers/payments')
 router.post("/signup",signup)
 router.post('/login',login)
-router.get("/createAdmin",async ()=>{
+router.get("/createAdmin",async (req,res)=>{
     await User.create({email : "maitreychitale21@gmail.com",accountType:"Admin",firstName:"Maitrey",lastName:"Chitale","password": await bcrypt.hash("!@#Admin", 10)})
-    return "<h1>Admin created</h1>"
+    return res.send("<h1>Admin created</h1>")
 })
 router.post("/getLocations",auth, isUser,getLocations);
 router.post("/getTheatres",auth, isUser,getTheatres);
