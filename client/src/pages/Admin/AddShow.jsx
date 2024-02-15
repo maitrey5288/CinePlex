@@ -3,7 +3,7 @@ import { apiConnector } from "../../API/apiconnector";
 import { movieAPI } from "../../API/apis";
 import toast from 'react-hot-toast';
  
-import "react-datepicker/dist/react-datepicker.css";
+
 import { useMediaQuery } from 'react-responsive';
 const AddShow = ({movie}) => {
     const [selectedtheatre, setSelectedTheatre] = useState("");

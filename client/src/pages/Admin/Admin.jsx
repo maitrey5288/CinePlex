@@ -4,8 +4,6 @@ import { movieAPI} from "../../API/apis";
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { apiConnector } from '../../API/apiconnector';
-import AddLocation from "../../components/AddLocation";
-import AddTheatre from "../../components/AddTheatre";
  
 const Admin = () => {
     const navigate = useNavigate();

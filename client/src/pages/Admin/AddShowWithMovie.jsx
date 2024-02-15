@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { apiConnector } from "../../API/apiconnector";
 import { movieAPI } from "../../API/apis";
 import toast from 'react-hot-toast';
-import "react-datepicker/dist/react-datepicker.css";
+ 
 import { useMediaQuery } from 'react-responsive';
 const AddShowWithMovie = ({shows,setShows,selectedtheatreForListing}) => {
   const small = useMediaQuery({ query: '(max-width: 385px)' })
