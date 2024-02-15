@@ -122,7 +122,7 @@ const AdminMovies = ({ theatre }) => {
   }, []);
 
   return loading ? (
-    <>Loading</>
+    <div className='text-white'>Loading</div>
   ) : (
     <div className="relative">
       <div className="bg-bg-2 text-white  w-full  pt-11   px-1">

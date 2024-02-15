@@ -161,7 +161,7 @@ exports.verifyPayment = async (req, res) => {
     await mailSender(
       OrderDetails.user.email,
       "Verify Email",
-      `Your seats <h1>${OrderDetails.seat}</h1> for show <h1>${OrderDetails.show}</h1> for movie <h1>${OrderDetails.movie }</h1>`
+      `Your seats <h1>${OrderDetails.seat.toString()}</h1> for show <h1>${OrderDetails.show}</h1> for movie <h1>${OrderDetails.movie }</h1>`
     );
 
     return res.status(200).json({ success: true, message: "Payment Verified" })

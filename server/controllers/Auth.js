@@ -63,7 +63,7 @@ exports.signup = async (req, res) => {
   
     const token = crypto.randomBytes(32).toString('hex');
 
-      const url = `http://localhost:3000/verify/${token}`;
+      const url = `${process.env.FRONTEND}/${token}`;
   
       await mailSender(
         email,

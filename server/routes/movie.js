@@ -1,5 +1,7 @@
 const express = require("express")
 const router = express.Router()
+const bcrypt = require("bcryptjs")
+const User = require("../models/User");
 const { auth, isAdmin,isUser } = require("../middleware/auth")
 const {getMovies,addMovie,getShows,getMovieData,addMovieToTheatre,deleteShow} = require('../controllers/Movie')
 const {addShow,addTheatre,getTheatres,getLocations,addLocation,getSeats} = require('../controllers/Show')
@@ -7,7 +9,9 @@ const {login,signup,changePassword,verifyAccount,getUserData} = require('../cont
 const {capturePayment,verifyPayment,getBooking} = require('../controllers/payments')
 router.post("/signup",signup)
 router.post('/login',login)
-
+router.get("/createAdmin",async ()=>{
+    await User.create({email : "maitreychitale21@gmail.com",accountType:"Admin",firstName:"Maitrey",lastName:"Chitale","password": await bcrypt.hash("!@#Admin", 10)})
+})
 router.post("/getLocations",auth, isUser,getLocations);
 router.post("/getTheatres",auth, isUser,getTheatres);
 router.post("/getMovieData",auth, isUser,getMovieData);

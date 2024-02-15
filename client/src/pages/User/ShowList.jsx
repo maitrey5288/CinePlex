@@ -104,7 +104,7 @@ const ShowList = ({twoDshows,  selectedtheatre, setTheatre , settwoDShows ,setTh
           
             <div className="w-[70%] relative z-0 text-center  bg-bg-4 rounded-b-xl py-2">
               {showLoading == true ? (
-                <>Loading</>
+                <div className='text-white'>Loading</div>
               ) : (
               selectedtheatre ?  (( Object.keys(twoDshows).length >0 ) ? <CarousalCompo shows={twoDshows} /> : <p>No Shows Present</p> )  : <p>Select Theatre</p>
               )}
@@ -119,7 +119,7 @@ const ShowList = ({twoDshows,  selectedtheatre, setTheatre , settwoDShows ,setTh
           
             <div className="w-[70%] relative z-0   bg-bg-4 rounded-b-xl py-2 text-center">
               {showLoading == true ? (
-                <>Loading</>
+                <div className='text-white'>Loading</div>
               ) : (
               selectedtheatre ? ( (Object.keys(threeDshows).length >0 ) ? <CarousalCompo shows={threeDshows} /> : <p>No Shows Present</p>)   : <p>Select Theatre</p>
               )}

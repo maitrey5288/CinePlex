@@ -39,7 +39,7 @@ const Bookings = () => {
   return (
     <div className="w-full pb-2">
       {loading ? (
-        <>loading</>
+        <div className='text-white'>Loading</div>
       ) : (
        bookings.map((ticket) => {
         return <div> <Ticket ticket={ticket}/> </div>

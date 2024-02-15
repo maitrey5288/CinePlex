@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { apiConnector } from "../../API/apiconnector";
 import { movieAPI } from "../../API/apis";
 import toast from 'react-hot-toast';
-import TimePicker from 'react-time-picker';
-import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { useMediaQuery } from 'react-responsive';
 const AddShowWithMovie = ({shows,setShows,selectedtheatreForListing}) => {

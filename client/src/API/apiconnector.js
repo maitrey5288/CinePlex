@@ -21,7 +21,7 @@ export const apiConnector = (method, url, bodyData, headers, params) => {
       finaldata['token'] = token;
  
     }
- 
+                                                                            
     return axiosInstance({
         method:`${method}`,
         url:`${url}`,

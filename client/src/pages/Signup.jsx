@@ -182,7 +182,7 @@ const Signup = () => {
 
 
     }
-    {loading && <>loading</>}
+    {loading &&  <div className='text-white'>Loading</div>}
     
     
     </div>

@@ -41,7 +41,7 @@ else{
         <img className=' sm:w-[600px] mx-auto' src={hero}></img>
       </div>
       <div className='w-[80%] sm:w-[60%] sm:min-w-96 flex flex-col gap-10 justify-center tems-center'>
-      <div className={"sm:pl-10 text-wrap  font-semibold text-white "+ (small ? " w-[80vw] text-[8vw]" : "  text-6xl")}>Unleash Your Cinematic Odyssey with <p class=" bg-gradient-to-br from-textcolor via-[#BD86FF] to-textcolor inline-block bg-clip-text text-transparent">
+      <div className={"sm:pl-10 text-wrap  font-semibold text-white "+ (small ? " w-[80vw] text-[8vw]" : "  text-6xl")}>Unleash Your Cinematic Odyssey with <p className=" bg-gradient-to-br from-textcolor via-[#BD86FF] to-textcolor inline-block bg-clip-text text-transparent">
 CineZen
 </p></div>
       <div className={'text-white/50 sm:pl-10  sm:w-full text-wrap ' + (small && " text-[3vw] w-[80vw]")}><p>Immerse yourself in the magic of the big screen.Effortless booking, exclusive rewards, and a world of genres await. Your ticket to unparalleled movie experiences starts here. Book now and let the reel adventure begin!</p></div>

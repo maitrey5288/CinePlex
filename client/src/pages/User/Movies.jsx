@@ -93,7 +93,7 @@ useEffect(() => {
   }, [])
  
   return (
-    loading ? <>Loading</> : (<><div className="bg-bg-2 text-white  w-full  pt-11   px-32">
+    loading ?  <div className='text-white'>Loading</div> : (<><div className="bg-bg-2 text-white  w-full  pt-11   px-32">
         <div className='text-3xl text-white w-full flex flex-col items-center my-2'>
                 <p>All Movies</p>
                 <div className={`h-1 w-36 mt-1 bg-textcolor`}></div>

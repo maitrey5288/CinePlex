@@ -60,7 +60,7 @@ const VerifyEmail = () => {
         }, [])
 
     return (
-        <div className='w-full h-[100vh] flex justify-center items-center text-3xl text-textcolor'>
+        <div className='w-full h-[800vh] flex justify-center items-center text-3xl text-textcolor'>
         <div className='mx-auto'>
 
      

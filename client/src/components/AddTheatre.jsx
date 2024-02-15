@@ -42,7 +42,7 @@ async function submitHandler(){
 
 return (
     <div className='flex w-full flex-wrap  justify-start my-2 items-center bg-bg-4 p-3 rounded-md'>
-    {loading && <div>Loading</div>}
+    {loading && <div className='text-white'>Loading</div>}
    {!loading && <div className='flex flex-wrap gap-2 justify-center items-center'>
    
     <label className='text-textcolor'>Theatre Name</label>
